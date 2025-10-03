@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="vendor/lightbox2/css/lightbox.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+  <div class="container header-inner">
+    <a class="logo" href="#hero">
+  <img src="images/njokiwhite-logo.png" alt="Njoki Muchemi Logo" width="100" height="100">
+  <span>Njoki Muchemi</span>
+  </a>
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+	<li><a href="#vision">Vision</a></li>
+	<li><a href="#mission">Mission</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#projects">Projects</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1>Welcome, I’m <span>Njoki Muchemi</span></h1>
+    <p>Blending gifts and grace for lasting impact.</p>
+    <a href="#projects" class="btn-primary">View My Work</a>
+    <a href="#contact" class="btn-secondary">Contact Me</a>
+  </div>
+  <div class="hero-image">
+    <img src="images/avatar.png" alt="Njoki Muchemi portrait" width="300" height="300">
+  </div>
+</section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="container fade-in">
+    <h2>About Me</h2>
+    <p>I am a writer, website developer, creative designer, and administrator with a strong background in finance, marketing, and organizational management. 
+       An uncommon blend of professional expertise and God-given talents, I bring creativity and structure together to craft compelling content, 
+       design impactful visuals, and build efficient systems. My work empowers both corporate and faith-based organizations to communicate with clarity, 
+       grow with excellence and thrive with lasting impact all for the glory of God.</p>
+  </section>
+
+<!-- VISION -->
+  <section id="vision" class="container fade-in">
+<h2>My Vision</h2>
+    <p>To see individuals, businesses, and faith-based organizations transformed by creativity, excellence and sound stewardship;
+ becoming impactful voices and thriving institutions that inspire growth, uphold justice, and reflect God’s glory in the world.</p>
+  </section>
+
+<!-- MISSION -->
+  <section id="mission" class="container fade-in">
+<h2>My Mission</h2>
+    <p>My mission is to use my God-given talents in writing, design, technology, and administration to empower organizations with creativity,
+ clarity, and structure. By blending professional expertise with inspired vision, I seek to help both corporate and faith-based institutions
+ steward their resources wisely, communicate effectively, and thrive in their purpose—all for the glory of God..</p>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="container fade-in">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Coding</li>
+      <li>Design</li>
+      <li>Research</li>
+      <li>Finance Management</li>
+      <li>Writing Books</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container fade-in">
+    <h2>Projects & Links</h2>
+    <ul>
+      <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+      <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      <li><a href="https://bible.com" target="_blank" rel="noopener noreferrer">Bible</a></li>
+      <li><a href="https://canva.com" target="_blank" rel="noopener noreferrer">Canva</a></li>
+      <li><a href="BrokenforDivineReshaping.pdf" target="_blank">Divine Reshaping</a></li>
+    </ul>
+  </section>
+
+  <!-- (Optional) GALLERY -->
+<section id="gallery" class="container">
+  <h2>My Gallery</h2>
+  <div class="gallery">
+    <a href="images/cap.png" data-lightbox="gallery" data-title="Design Cap">
+      <img src="images/cap.png" alt="Project 1">
+    </a>
+    <a href="images/cup.png" data-lightbox="gallery" data-title="Design Cup">
+      <img src="images/cup.png" alt="Project 2">
+    </a>
+    <a href="images/flyer.png" data-lightbox="gallery" data-title="Event Flyer">
+      <img src="images/flyer.png" alt="Project 3">
+    </a>
+    <a href="images/phone.png" data-lightbox="gallery" data-title="Design Phone">
+      <img src="images/phone.png" alt="Project 4">
+    </a>
+    <a href="images/brochure.png" data-lightbox="gallery" data-title="Event Brochure">
+      <img src="images/brochure.png" alt="Project 5">
+    </a>
+  </div>
+</section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="container fade-in">
+    <h2>Weekly Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Monday</th>
+          <td>Reading</td>
+          <td>Work</td>
+          <td>Prayer meeting</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td>Coding practice</td>
+          <td>Office</td>
+          <td>Family time</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>Design study</td>
+          <td>Meetings</td>
+          <td>Community work</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="container fade-in">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <fieldset>
+      <legend>Send me a message</legend>
+
+      <label for="from_name">Full Name</label>
+      <input type="text" id="from_name" name="from_name" required>
+
+      <label for="from_email">Email</label>
+      <input type="email" id="from_email" name="from_email" required>
+
+      <label for="phone">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </fieldset>
+  </form>
+  <div id="formMessage"></div>
+</section>
+
+  <!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Njoki Muchemi. All rights reserved.</p>
+  <p>Connect with me:
+    <a href="https://www.facebook.com/imuchemi" target="_blank" rel="noopener noreferrer">My Facebook</a> |
+    <a href="https://www.youtube.com/@njokimuchemijinjo" target="_blank" rel="noopener noreferrer">My YouTube Channel</a> |
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </p>
+</footer>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("kJUB3pzxQJ_2Ox2D5"); // replace with your EmailJS Public Key
+  })();
+</script>
+
+<!-- Link to your JavaScript -->
+<script src="vendor/jquery/jquery-3.7.1.min.js"></script>
+<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

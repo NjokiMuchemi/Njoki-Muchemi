@@ -1,0 +1,364 @@
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* General page style */
+body {
+  font-family: 'Rasa', serif;
+  font-weight: 400;
+  background-color: #ffe6f0; /* light pink */
+  color: #4b0082; /* dark purple */
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  background: black;   /* so white logo + text is visible */
+  padding: 10px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+nav a.active {
+  color: #ffd6e8;   /* light pink highlight */
+  border-bottom: 2px solid #ffd6e8;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d63384; /* deep pink headings */
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Buttons */
+.button {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: #007bff; /* blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #0056b3; /* darker blue */
+}
+
+/* Header & Footer */
+header, footer {
+  background: #d63384; /* deep pink */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+footer a:hover {
+  color: #ffd6e8; /* soft light pink */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #d63384; /* pink border */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4b0082; /* dark purple */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fce4ec; /* very light pink */
+}
+
+tr:hover {
+  background-color: #f8bbd0; /* medium pink */
+}
+/* Make header content centered */
+.header-inner {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+}
+
+/* Nav list styles */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;    /* horizontal layout */
+  gap: 20px;        /* spacing between items */
+}
+
+/* Nav links */
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+/* Header */
+header {
+  background-color: #d63384; /* dark pink header */
+  padding: 15px 0;
+  position: sticky;  /* stays at top when scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+/* Align logo + nav horizontally */
+.header-inner {
+  display: flex;
+  justify-content: center;  /* centers whole content */
+  align-items: center;
+  gap: 40px; /* space between logo and nav */
+}
+
+/* Nav list */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* spacing between nav items */
+}
+
+/* Nav links */
+header nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+/* Base: nav visible */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile: hide menu until toggled */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: black;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+/* Gallery Styling */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+/* HERO Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  min-height: 90vh; /* nearly full screen */
+  background: linear-gradient(to right, #a1045a, #4b0082); /* pink → purple */
+  color: white;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #ededed; /* white highlight */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: white;
+  color: #d63384;
+}
+
+.btn-primary:hover {
+  background: #ffd6e8;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #4b0082;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
+/* Animation base */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+:root { --header-h: 90px; } /* adjust 90px to match your header height */
+
+section {
+  /* ensure the browser offsets anchor targets so header doesn't cover them */
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
