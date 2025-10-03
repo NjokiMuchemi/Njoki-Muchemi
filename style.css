@@ -362,6 +362,7 @@ section {
   /* ensure the browser offsets anchor targets so header doesn't cover them */
   scroll-margin-top: calc(var(--header-h) + 12px);
 }
+/* Responsive YouTube video */
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
@@ -379,7 +380,11 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Video gallery grid */
 .video-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -387,9 +392,10 @@ section {
   margin-top: 20px;
 }
 
-.video-container iframe {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* Force single column on very small screens */
+@media (max-width: 480px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
 }
+

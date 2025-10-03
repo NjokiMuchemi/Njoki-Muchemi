@@ -1,5 +1,5 @@
 My Canva Design
 
 git add .
-git commit -m "Update Canva Design"
+git commit -m "Update all changes"
 git push origin main
